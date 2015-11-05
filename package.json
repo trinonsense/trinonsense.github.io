@@ -1,0 +1,31 @@
+{
+  "name": "trinonsense.github.io",
+  "version": "1.0.0",
+  "description": "Tri's Personal Website",
+
+  "scripts": {
+    "build": "npm run css-build",
+    "dev": "npm run css-watch",
+
+    "css-watch": "sass --watch scss:dist",
+    "css-compile": "sass --scss --style=compressed scss/nonsense.scss dist/nonsense.css",
+    "css-prefix": "postcss --use autoprefixer dist/nonsense.css  dist/nonsense.css",
+    "css-build": "npm run css-compile && npm run css-build"
+  },
+
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinonsense/trinonsense.github.io.git"
+  },
+  "author": "Tri Noensie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trinonsense/trinonsense.github.io/issues"
+  },
+  "homepage": "https://github.com/trinonsense/trinonsense.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}
