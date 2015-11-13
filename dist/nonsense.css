@@ -384,10 +384,18 @@ body .main-content {
 
 .map-mask {
   background-color: white;
-  opacity: .6; }
+  opacity: 0.7; }
 
 .main-content {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
+
+.main-head {
+  font-family: Lato, sans-serif; }
+
+.main-subhead {
+  font-family: 'Libre Baskerville', serif; }
+
+/*# sourceMappingURL=nonsense.css.map */
