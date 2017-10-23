@@ -12,53 +12,236 @@
 	<link rel="stylesheet" href="/lib/css/normalize.css">
 	<script src="https://use.typekit.net/pts4ewu.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<style>
+		body {
+			padding: 16px;
+			max-width: 900px;
+			margin: 0 auto;
+			color: #2d2d2d;
+			background-color: #FAFAFA;
+		}
+
+		a:link, a:visited {
+			color: #2d2d2d;
+		}
+
+		h1 {
+			font-weight: normal;
+			margin-bottom: 1.6em;
+		}
+
+		h2 {
+			text-align: center;
+			border-bottom: 1px solid #9a9a9a;
+			padding-bottom: 8px;
+			width: 50%;
+			margin: auto;
+			font-size: 2em;
+		}
+
+		.MainLinks, .WorkLinks, .TechList, .Funsies {
+			-webkit-padding-start: 0;
+	    list-style: none;
+		}
+
+		.MainLinks {
+	    display: flex;
+      align-items: center;
+      justify-content: center;
+		}
+
+		.MainLinks img {
+			margin-right: 8px;
+			height: 35px;
+			display: inline-block;
+		}
+
+		.MainLinks li:last-child img {
+			margin-right: 0;
+		}
+
+		.WorkLinks {
+			display: flex;
+	    flex-wrap: wrap;
+	    margin-right: -20px;
+	    justify-content: center;
+	    margin-top: 30px;
+		}
+
+		.WorkLinks > li {
+			flex: 2 300px;
+	    margin-right: 20px;
+			margin-bottom: 20px;
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+			max-width: 450px;
+	    background-color: white;
+		}
+
+		.WorkLinks > li > :first-child {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 150px;
+			background-color: white;
+		}
+
+		.WorkInfo {
+			border-top: 1px solid rgba(0,0,0, .2);
+	    padding: 16px;
+	    min-height: 70px;
+		}
+
+		.WorkLinks img {
+			max-width: 250px;
+			margin-bottom: 16px;
+		}
+
+		.WorkInfo p {
+			margin-bottom: 6px;
+			margin-top: 0;
+		}
+
+		.TechList li {
+			display: inline-block;
+	    margin-right: 10px;
+	    margin-bottom: 4px;
+	    color: #a5a5a5;
+		}
+
+		.Funsies {
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+			background-color: white;
+			padding: 20px;
+			font-size: 18px;
+			max-width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.Funsies li:not(:last-child) {
+			margin-bottom: 8px;
+		}
+
+		h3 {
+			margin-top: 5em;
+		}
+
+		@media (min-width: 414px) {
+			h1 {
+				font-size:  2.6em;
+			}
+		}
+
+		@media (min-width: 768px) {
+			h1 {
+				font-size: 4em;
+			}
+		}
+	</style>
 </head>
 <body class="tk-calluna-sans">
-
-	<h1>Frontend Developer at Tastemade in Austin, TX</h1>
-	<h2>Tri Noensie</h2>
-
-	<ul>
-		<li><a href="">Resume</a></li>
+	<ul class="MainLinks">
+		<li><a href="/resume.pdf"><img src="/lib/assets/resume.png" alt="resume"></a></li>
 		<li><a href="https://github.com/trinonsense"><img src="/lib/assets/github.png" alt="Github"></a></li>
 		<li><a href="https://www.linkedin.com/in/trinonsense"><img src="/lib/assets/linkedin.png" alt="LinkedIn"></a></li>
 	</ul>
 
-	<h3>Work</h3>
-	<ul>
-		<li><a href="https://www.tastemade.com"><img src="/lib/assets/tastemade.png" alt="Tastemade"></a></li>
-		<li><a href="http://travel.tripcase.com/"><img src="/lib/assets/tripcase.jpg" alt="Tripcase"></a></li>
-		<li><a href="http://www.ou.edu/webcomm.html"><img src="/lib/assets/ou.jpg" alt="University of Oklahoma"></a></li>
-		<li><a href="https://www.arm.gov/data/data-quality-program"><img src="/lib/assets/arm.jpg" alt="ARM DQO"></a></li>
+	<h1>
+		Hi. I'm a frontend developer in Austin, TX.
+		I work with great people at <a href="https://www.tastemade.com">Tastemade</a>.
+		My name is Tri Noensie. Nice to meet you :)
+	</h1>
+
+	<h2>Work</h2>
+	<ul class="WorkLinks">
+		<li>
+			<a href="https://www.tastemade.com"><img src="/lib/assets/tastemade.png" alt="Tastemade"></a>
+			<div class="WorkInfo">
+				<p>Sep 2014 - Current</p>
+				<ul class="TechList">
+					<li>Javascript</li>
+					<li>CSS</li>
+					<li>HTML</li>
+					<li>SASS</li>
+					<li>React</li>
+					<li>Node</li>
+					<li>Npm</li>
+					<li>Express</li>
+					<li>Webpack</li>
+					<li>Babel</li>
+					<li>Frontend Monitoring</li>
+					<li>Frontend Performance</li>
+					<li>Continuous Integration</li>
+					<li>CDN</li>
+					<li>Analytics</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<a href="http://travel.tripcase.com/"><img src="/lib/assets/tripcase.jpg" alt="Tripcase"></a>
+			<div class="WorkInfo">
+				<p>Jun 2012 - Aug 2014</p>
+				<ul class="TechList">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>SCSS</li>
+					<li>Javascript</li>
+					<li>Backbone</li>
+					<li>Jasmine</li>
+					<li>NPM</li>
+					<li>Grunt</li>
+					<li>Gulp</li>
+					<li>Bower</li>
+					<li>PhoneGap</li>
+					<li>Ruby on Rails</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<a href="https://www.arm.gov/data/data-quality-program"><img src="/lib/assets/arm.jpg" alt="ARM DQO"></a>
+			<div class="WorkInfo">
+				<p>May 2009 - July 2011</p>
+				<ul class="TechList">
+					<li>IDL</li>
+					<li>NetCDF</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>LESS</li>
+					<li>Javascript</li>
+					<li>jQuery</li>
+					<li>Python</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<a href="http://www.ou.edu/webcomm.html"><img src="/lib/assets/ou.jpg" alt="University of Oklahoma"></a>
+			<div class="WorkInfo">
+				<p>Jun 2010 - Dec 2010</p>
+				<ul class="TechList">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+					<li>jQuery</li>
+				</ul>
+			</div>
+		</li>
 	</ul>
 
-	<ul>
-		<li>javascript</li>
-		<li>css</li>
-		<li>html</li>
-		<li>sass</li>
-		<li>react</li>
-		<li>node</li>
-		<li>npm</li>
-		<li>express</li>
-		<li>webpack</li>
-		<li>babel</li>
-		<li>frontend tooling</li>
-		<li>frontend monitoring</li>
-		<li>frontend performance</li>
-		<li>continuous integration</li>
-		<li>cdn</li>
-		<li>analytics</li>
+
+	<h2>Funsies</h2>
+	<ul class="Funsies">
+		<li><a href="https://github.com/trinonsense/thanksgiving-2015">Thanksgiving Menu (2015)</a></li>
+		<li><a href="https://github.com/trinonsense/dtx">DTX (2014)</a></li>
+		<li><a href="https://github.com/trinonsense/simply-tris">Simply Tri's (2011)</a></li>
 	</ul>
 
-	<h3>Funsies</h3>
+	<h3>Credits</h3>
 	<ul>
-		<li><a href="https://github.com/trinonsense/thanksgiving-2015">Thanksgiving Menu - 2015</a></li>
-		<li><a href="https://github.com/trinonsense/dtx">DTX - 2014</a></li>
-		<li><a href="https://github.com/trinonsense/simply-tris">Simply Tri's - 2011</a></li>
+		<li>Resume by unlimicon from the Noun Project</li>
+		<li>Raccoon by Michael G Brown from the Noun Project</li>
 	</ul>
 
-	<p><a href="https://github.com/trinonsense/trinonsense.github.io">&lt;code /&gt;</a></p>
+	<p>Updated: October 2017 <a href="https://github.com/trinonsense/trinonsense.github.io">&lt;code /&gt;</a></p>
 	<script>
 		window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
 		ga('create','UA-51684944-2','auto');ga('send','pageview')
