@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Tri's Personal Website",
   "scripts": {
-    "start": "http-server ./ -p 8000"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "serve": "serve ./out -p 8000"
   },
   "repository": {
     "type": "git",
@@ -14,8 +17,26 @@
     "url": "https://github.com/trinonsense/trinonsense.github.io/issues"
   },
   "homepage": "http://trinoensie.com",
-  "dependencies": {},
+  "dependencies": {
+    "next": "^9.1.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
   "devDependencies": {
-    "http-server": "^0.10.0"
+    "@types/node": "^13.7.0",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.19.1",
+    "serve": "^11.3.0",
+    "typescript": "^3.7.5"
   }
 }
