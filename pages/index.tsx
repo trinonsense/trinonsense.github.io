@@ -1,8 +1,11 @@
 import React from 'react'
 import { NextPage } from 'next'
+import { Head } from './../components/Head'
 
 const HomePage: NextPage = () => (
   <div>
+    <Head />
+    <GlobalStyle />
     <Navigation />
     <Intro />
     <Expertise />
@@ -11,6 +14,18 @@ const HomePage: NextPage = () => (
     <Footer />
     <GA />
   </div>
+)
+
+const GlobalStyle = (): JSX.Element => (
+  <style global jsx>
+    {`
+      body {
+        font-family: adobe-garamond-pro, serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    `}
+  </style>
 )
 
 const Navigation = (): JSX.Element => (
