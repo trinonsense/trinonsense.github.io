@@ -1,12 +1,16 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { Head } from './../components/Head'
+import { Links } from './../components/Links'
+import { Intro } from './../components/Intro'
+import { Expertise } from './../components/Expertise'
+import { Experience } from './../components/Experience'
 
 const HomePage: NextPage = () => (
   <div>
     <Head />
     <GlobalStyle />
-    <Navigation />
+    <Links />
     <Intro />
     <Expertise />
     <Experience />
@@ -23,92 +27,16 @@ const GlobalStyle = (): JSX.Element => (
         font-family: adobe-garamond-pro, serif;
         font-weight: 400;
         font-style: normal;
+        padding: 1.5rem;
+        font-size: 16px;
+      }
+
+      a,
+      a:visited,
+      a:active {
       }
     `}
   </style>
-)
-
-const Navigation = (): JSX.Element => (
-  <ul>
-    <li>
-      <a href="https://github.com/trinonsense">Github</a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/trinonsense">LinkedIn</a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/trinonsense">Instagram</a>
-    </li>
-  </ul>
-)
-
-const Intro = (): JSX.Element => (
-  <p>
-    Hi. My name is Tri (pronounced "tree"). I’m a front end developer based out
-    of Austin, Texas. I work with great people at{' '}
-    <a href="indeed.com">Indeed</a>. I’m also currently interested in picking up
-    new projects. <a href="#">Let’s be in touch</a> :)
-  </p>
-)
-
-const Expertise = (): JSX.Element => (
-  <div>
-    <h2>Expertise</h2>
-    <ul>
-      <li>Javascript/Typescript</li>
-      <li>Browser/Node</li>
-      <li>React/Redux</li>
-      <li>CSS/SASS/CSS-in-JS</li>
-      <li>BEM/SMACSS</li>
-      <li>HTML/JSX/Mustache</li>
-      <li>CI/CD</li>
-      <li>Performance</li>
-    </ul>
-  </div>
-)
-
-const Experience = (): JSX.Element => (
-  <div>
-    <h2>
-      Experience | <a href="https://standardresume.co/r/trinoensie">CV</a>
-    </h2>
-    <div>
-      <p>2018 - present</p>
-      <h3>
-        <a href="https://www.indeed.com/">Indeed</a>
-      </h3>
-    </div>
-    <div>
-      <p>2014 - 2018</p>
-      <h3>
-        <a href="https://watch.tastemade.com/browse">Tastemade</a>
-      </h3>
-    </div>
-    <div>
-      <p>2012 - 2014</p>
-      <h3>
-        <a href="https://www.sabretravelnetwork.com/home/solutions/product/TripCase">
-          Tripcase
-        </a>
-      </h3>
-    </div>
-    <div>
-      <p>2009 - 2011</p>
-      <h3>
-        <a href="https://www.arm.gov/data/data-quality-program">
-          ARM Research Facility
-        </a>
-      </h3>
-    </div>
-    <div>
-      <p>2010</p>
-      <h3>
-        <a href="http://www.ou.edu/marcomm">
-          University of Oklahoma Web Communications
-        </a>
-      </h3>
-    </div>
-  </div>
 )
 
 const ContactMe = (): JSX.Element => (
