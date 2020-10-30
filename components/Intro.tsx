@@ -1,24 +1,33 @@
 import React from 'react'
 
 export const Intro = (): JSX.Element => (
-  <div>
+  <>
+    <div className="intro">
+      <p>
+        Frontend developer in Austin, TX 🤠 Currently building buttons and
+        modals at <a href="https://www.indeed.com/">Indeed</a>.
+      </p>
+      <p>
+        <a href="#">Let’s get in touch.</a>
+      </p>
+    </div>
+
     <style jsx>{`
-      p {
-        font-size: 2rem;
-        line-height: 2.7rem;
+      .intro {
+        margin: 1.3rem 1.3rem 15vmax;
       }
 
-      p:first-child {
-        margin-top: 7rem;
+      p {
+        font-size: calc(3vh + 1rem);
+      }
+
+      @media only screen and (min-width: 768px) {
+        .intro {
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     `}</style>
-    <p>
-      Hi. My name is Tri (pronounced "tree"). I’m a front end developer in
-      Austin, Texas. I work with great people at <a href="indeed.com">Indeed</a>
-      . I’m also currently interested in picking up new projects.
-    </p>
-    <p>
-      <a href="#">Let’s get in touch</a> :)
-    </p>
-  </div>
+  </>
 )

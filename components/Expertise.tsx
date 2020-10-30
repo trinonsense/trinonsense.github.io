@@ -23,26 +23,12 @@ export const Expertise = (): JSX.Element => (
     `}</style>
     <h2>Expertise</h2>
     <ul>
-      <li>
-        Javascript / <a href="https://www.typescriptlang.org/">Typescript</a>
-      </li>
-      <li>
-        Browser / <a href="https://nodejs.org/en/">Node</a>
-      </li>
-      <li>
-        <a href="https://reactjs.org/">React</a> /{' '}
-        <a href="https://redux.js.org/">Redux</a>
-      </li>
-      <li>
-        CSS / <a href="https://sass-lang.com/">SASS</a>
-      </li>
-      <li>
-        <a href="http://getbem.com/">BEM</a> /{' '}
-        <a href="http://smacss.com/">SMACSS</a>
-      </li>
-      <li>
-        HTML / <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a>
-      </li>
+      <li>Javascript / Typescript</li>
+      <li>DOM / Node</li>
+      <li>React / Redux</li>
+      <li>CSS / CSS-in-JS</li>
+      <li>SASS / BEM</li>
+      <li>Frontend Ops</li>
     </ul>
   </div>
 )

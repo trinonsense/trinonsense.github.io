@@ -3,11 +3,8 @@ import NextHead from 'next/head'
 
 export const Head = (): JSX.Element => (
   <NextHead>
-    <title>Tri Noensie | Frontend Developer</title>
-    <meta
-      name="description"
-      content="Frontend Developer for Tastemade in Austin, TX"
-    />
+    <title>Tri Noensie | Frontend Developer | Austin, TX</title>
+    <meta name="description" content="Frontend developer in Austin, TX" />
     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />

@@ -1,47 +1,52 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { Head } from './../components/Head'
-import { Links } from './../components/Links'
+import { Nav } from './../components/Nav'
 import { Intro } from './../components/Intro'
 import { Expertise } from './../components/Expertise'
 import { Experience } from './../components/Experience'
 
 const HomePage: NextPage = () => (
-  <div>
+  <>
     <Head />
     <GlobalStyle />
-    <Links />
+    <Nav />
     <Intro />
     <Expertise />
     <Experience />
-    <ContactMe />
+    <CTA />
     <Footer />
-    <GA />
-  </div>
+    <Scripts />
+  </>
 )
 
 const GlobalStyle = (): JSX.Element => (
   <style global jsx>
     {`
+      html {
+        font-size: 18px;
+      }
+
       body {
         font-family: adobe-garamond-pro, serif;
         font-weight: 400;
         font-style: normal;
-        padding: 1.5rem;
-        font-size: 16px;
+        background-color: rgb(246, 245, 234);
+        color: rgb(54, 51, 23);
       }
 
       a,
       a:visited,
       a:active {
+        color: rgb(54, 51, 23);
       }
     `}
   </style>
 )
 
-const ContactMe = (): JSX.Element => (
+const CTA = (): JSX.Element => (
   <h2>
-    <a href="mailto:tnnoensie@gmail.com">Contact Me</a>
+    <a href="mailto:tnnoensie@gmail.com">Get in touch</a>
   </h2>
 )
 
@@ -57,7 +62,7 @@ const Footer = (): JSX.Element => (
   </div>
 )
 
-const GA = (): JSX.Element => (
+const Scripts = (): JSX.Element => (
   <>
     <script
       dangerouslySetInnerHTML={{
